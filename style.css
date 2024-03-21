@@ -1,0 +1,744 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.navbar {
+    font-size: 18px;
+    filter: drop-shadow(1px 1px 6px rgb(185, 185, 185));
+
+
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+    padding: 0 25px;
+
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(230, 153, 10);
+    transition: o.3s ease;
+}
+
+.navbar i {
+    font-size: 1.5;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.navbar i:hover {
+    color: rgb(230, 153, 10);
+    ;
+}
+
+/*home section */
+#home h5 {
+    color: rgb(15, 15, 15);
+    font-size: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 500;
+}
+
+#home span {
+    color: rgb(255, 167, 5);
+    font-size: 4rem;
+
+}
+
+#home h1 {
+    font-size: 2.8rem;
+    color: rgb(15, 15, 15);
+    margin-left: -2px;
+
+}
+
+#home p {
+    font-size: 14px;
+    margin-left: -14px;
+    line-height: 20px;
+}
+
+#home button {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(17, 17, 17);
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+#home button:hover {
+    background-color: #303030;
+}
+
+#home {
+    background-image: url(img/hero6.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top 60px center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+/* mobilebar */
+
+.navbar-light .navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+#bar {
+    font-size: 1.8rem;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    transition: 0.3s ease;
+}
+
+#bar:hover,
+#bar:active {
+    color: #ffffff;
+}
+
+@media only screen and (max-width:991px) {
+
+    body>nav>div>button:hover,
+    body>nav>div>button:focus {
+        background-color: rgb(255, 127, 80);
+    }
+
+    body>nav>div>button:hover #bar,
+    body>nav>div>button:focus #bar {
+        color: white;
+
+    }
+
+    #navbarSupportedContent>ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: self-end;
+        justify-content: right;
+    }
+
+    #navbarSupportedContent>ul>li:nth-child(n)>a {
+        padding: 10px 0;
+    }
+
+}
+
+/* newsection */
+
+#new .one img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#new .one .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+#new .one:hover .details {
+    background-color: rgba(255, 157, 201, 0.24);
+    cursor: pointer;
+}
+
+#new .one .details h2 {
+    font-size: 1.3rem;
+    color: #292929;
+    font-weight: 500;
+}
+
+#new .one .details button {
+    border: none;
+    outline: none;
+    padding: 0.4rem;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    font-weight: 500;
+    color: #292929;
+    background: transparent;
+    transform: translateY(70px);
+    transition: o.3s ease;
+}
+
+#new .one .details button:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#new .one:nth-child(1) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+
+}
+
+#new .one:nth-child(2) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#new .one:nth-child(3) .details {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+    text-align: end;
+}
+
+hr {
+    width: 60px;
+    height: 5px;
+    background-color: rgb(255, 167, 5);
+    border-radius: 10px;
+}
+
+/* product section  */
+.product {
+    cursor: pointer;
+}
+
+.product img {
+    transition: 0.3s all;
+    max-width: 80%;
+    margin: 10px 0;
+    
+
+}
+
+.product img:hover {
+    transform: scale(1.1);
+
+}
+/* 
+.product:hover img {
+    opacity: 0.7;
+}  */
+
+.product .buy-btn {
+    outline: none;
+    border: none;
+    background-color: rgb(255, 167, 5);
+    padding: 7px;
+    font-size: 13px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+    transform: translateY(0);
+    opacity: 1;
+
+}
+
+.star i {
+    color: gold;
+    font-size: 1rem;
+    margin-top: 15px;
+
+
+}
+
+.star {
+    margin: 6px 0;
+}
+
+.product .product-name {
+    font-size: 1rem;
+    color: #666666;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product .product-price {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: #232323;
+    margin-top: 5px;
+}
+
+/* banner section */
+
+#banner {
+    background-image: url(img/banner/2.jpg);
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+}
+
+#banner h4 {
+    font-size: 28px;
+    color: white;
+}
+
+#banner h1 {
+    font-size: 2.1rem;
+    color: #000;
+}
+
+#banner button {
+    border: none;
+    outline: none;
+    padding: 7px;
+    font-size: 13px;
+    font-weight: 500;
+    background-color: rgb(255, 167, 5);
+    cursor: pointer;
+    color: #1e1e1e;
+    border-radius: 2px;
+}
+
+#banner button:hover {
+    background-color: rgb(220, 143, 0);
+}
+
+/* footer section */
+footer {
+    background-color: #030303;
+
+}
+
+footer p {
+    color: rgb(132, 132, 132);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+footer h5 {
+    color: rgb(235, 234, 234);
+}
+
+footer ul a {
+    font-size: 0.8rem;
+    color: rgb(132, 132, 132);
+}
+
+footer ul a:hover {
+    color: rgb(190, 190, 190);
+}
+
+footer h6 {
+    color: rgb(235, 234, 234);
+
+}
+
+footer .copyright a {
+    color: black;
+    background-color: white;
+    display: inline-block;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    margin: 0 px;
+
+}
+
+footer .copyright a:hover {
+    color: white;
+    background-color: #fb774b;
+}
+
+
+/* icon */
+
+
+/* single product  */
+.small-img-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-img-col {
+    flex-basis: 24%;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+#main-img {
+    width: 100px;
+    height: 470px;
+    object-fit: cover;
+}
+
+.single-product select {
+    outline: none;
+    padding: 3px 3px;
+    margin: 10px 0;
+    color: #000000;
+    font-size: small;
+}
+
+.single-product h2 {
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    color: #000000;
+}
+
+.single-product input {
+    width: 43px;
+    height: 29px;
+    outline: none;
+    font-size: 0.9rem;
+
+
+
+    margin-right: 10px;
+}
+
+.single-product button {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    background-color: rgb(255, 165, 0);
+    color: white;
+    cursor: pointer;
+}
+
+.single-product button:hover {
+    background-color: rgb(236, 154, 0);
+}
+
+.single-product h4 {
+    font-size: 1.3rem;
+}
+
+.single-product h6 {
+    color: rgb(152, 152, 152);
+}
+
+.single-product span {
+    font-size: 1rem;
+    color: #2d2d2d;
+}
+
+
+/* blog  */
+
+.blog {
+    background-image: url(img/blog/blogbanner1.jpg);
+    width: 100%;
+    height: 50dvh;
+    background-size: cover;
+    background-position: top 50px center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-repeat: no-repeat;
+
+
+}
+
+.blog h1 {
+    font-size: 5rem;
+    color: rgb(255, 248, 248);
+    position: relative;
+    top: 90px;
+    margin-left: -22px;
+}
+
+/* blog section  */
+.blog-section img {
+    height: 270px;
+
+
+}
+
+.blog-details h6 {
+    color: #767676;
+    font-size: 15px;
+    font-weight: 400;
+
+}
+
+.blog-details p {
+    font-size: 16px;
+    margin-bottom: -1px;
+    font-weight: 500;
+    color: #030303;
+    margin-bottom: 10px;
+}
+
+.blog-details a {
+    font-size: 13px;
+    font-weight: 500;
+
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    padding: 3px 0;
+    position: relative;
+
+
+}
+
+.blog-details a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #111111;
+    content: "";
+    -webkit-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+
+.blog-details:hover a::after {
+    width: 40px;
+
+    background: rgb(230, 153, 10);
+}
+
+.blog-details {
+    background-color: rgb(254, 253, 253);
+    width: 250px;
+    margin: auto;
+    padding: 10px 0px;
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+
+
+}
+
+/* about section  */
+.about-section img {
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.about-detials h3 {
+    font-size: 1.4rem;
+    color: #000;
+}
+
+.about-detials p {
+    font-size: 15px;
+    color: #3d3d3d;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 0 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-commend {
+    background-color: rgb(243, 242, 238);
+    align-items: center;
+
+}
+
+.about-profile img {
+    display: block;
+    align-items: center;
+    width: 80px;
+    margin: auto;
+
+    border-radius: 50%;
+}
+
+.about-profile-name h2 {
+    font-size: 20px;
+    color: #000;
+
+}
+
+.about-profile-name p {
+    font-size: 17px;
+    color: #828282;
+    font-style: italic;
+}
+
+.about-profile-name {
+
+    text-align: center;
+
+
+}
+
+/* about celints  */
+.about-Clients {
+    display: flex;
+    justify-content: center;
+}
+
+.about-Clients p {
+    color: #111111;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 50px;
+    display: inline-block;
+}
+
+.about-Clients span {
+    display: block;
+    color: #3d3d3d;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.about-hr {
+    width: 100%;
+    height: 2%;
+    background-color: #dfdfdf;
+
+}
+
+/* about team  */
+.about-team h4 {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    color: rgb(230, 153, 10);
+}
+
+.about-team p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about-teams img {
+    width: 100%;
+    aspect-ratio: 3/5;
+    object-fit: contain;
+
+}
+
+.about-teams h4 {
+
+    color: #464646;
+    font-weight: 400;
+    text-align: start;
+}
+
+.about-teams p {
+    font-size: 16px;
+    color: #a4a4a4;
+    text-align: start;
+}
+
+.about-client img {
+    width: 100%;
+    aspect-ratio: 9/4;
+    object-fit: contain;
+
+}
+
+
+/* contacat information */
+
+.contacat-information h4 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    color: rgb(230, 153, 10);
+
+}
+
+.contacat-information h5 {
+    font-size: 2.6rem;
+    font-weight: 500;
+    color: #111111;
+}
+
+.contacat-information h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #111111;
+    margin-top: 40px;
+}
+
+.contacat-information p {
+    line-height: 25px;
+    font-size: 16px;
+    color: rgb(112, 112, 112);
+}
+
+.contact-form input {
+    height: 50px;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgb(225, 225, 225);
+    padding-left: 20px;
+    font-size: 15px;
+    color: rgb(183, 183, 183);
+    margin-bottom: 30px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgb(225, 225, 225);
+    padding-left: 20px;
+    padding-top: 12px;
+    font-size: 15px;
+    color: rgb(183, 183, 183);
+    margin-bottom: 24px;
+    resize: none;
+}
+
+.contact-form button {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(17, 17, 17);
+    font-weight: 500;
+    border: none;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 14px 30px;
+    cursor: pointer;
+}
