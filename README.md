@@ -1,5 +1,5 @@
 
-# Rymo - Shopping Website (Frontend Design)
+# 🛍️Rymo - Shopping Website (Frontend Design)
 
 **Live Demo:**  https://imsanthosh7.github.io/Rymo-Shopping-Website-/
 
@@ -41,7 +41,7 @@ Rymo is a contemporary e-commerce platform designed to provide users with a visu
 - Ensure seamless integration with Bootstrap's form components for easy interaction.
 
 <details>
-<summary><h3> 🎥 - Demo Video </h3></summary>
+<summary><h3> 🎬- Demo Video </h3></summary>
 <video src="https://github.com/imsanthosh7/Rymo-Shopping-Website-/assets/154437536/f12ca9e8-3540-4b7b-8b2d-cebd936d6b38" controls="controls" >
 </video>
 </details>
