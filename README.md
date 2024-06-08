@@ -1,4 +1,5 @@
-<div align='center'><img style="width:17%" src='https://github.com/imsanthosh7/Rymo-Shopping-Website-/assets/154437536/919b5c3e-4f59-4bbd-8e79-e77ce3851fce'/></div>
+<div align='center'><img style="width:17%" src='https://github.com/imsanthosh7/Rymo-Shopping-Website-/assets/154437536/3630694a-0172-4092-a2f9-69e67af592f7'/></div>
+
 # 🛍️Rymo - Shopping Website (Frontend Design)
 
 **Live Demo:**  https://imsanthosh7.github.io/Rymo-Shopping-Website-/
